@@ -1,0 +1,25 @@
+IGNORE CELL NUMBERS AS THEY ARE WRONG!:
+
+1. Cell 2: setting the style for dark colab notebook
+2. Good storytelling of EDA using each variable
+3. Cell 18: Create ratios to get derived numbers (ex. resorts per 100k people in a state)
+4. Above cell 23: PCA with 8 website links
+  scaling the data to get z-scores
+5. Cell 23: code to save index labels and column labels to use with scaled and transformed data by turning the array back into dataframes. 
+  Also can use for annotations when plotting
+6. Reminder that pandas std() uses ddof=1 standard so have to change to 0 to have it match sklearn scaling
+7. Cell 31 and 34: .explained_variance_ratio_.cumsum()) is like ECDF() and has helpful link above cell 31
+8 Cell 31: plt.subplot is a way to set figure size.
+9. Cell 36. Python f-strings for displaying percentages in titles and print(). Helpful link above Cell 35.
+10. Cell 36: Zip and Annotate in plotting.
+11. Example of groupby to get average price per state
+12. PCA scatterplot of first 2 components (best example is seaborn as it has sizes, quartiles, and colors, oh my!)
+  concat with y variable and quartile to help see y-variable better
+13. pandas categories: new datatype
+14. Example code for showing 7 components (for 7 variables), turning it into a dataframe from array, and using column labels:
+  pd.DataFrame(state_pca.components_, columns=state_summary_columns)
+15. Examples to find rows in columns and compare it to scaled version. This is because PCA had high numbers in 2 columns and we saw 2 states with high numbers in first 2 components
+16. ratios of each row (resort) compared to its state data (such as resort skiable terrain compared to total state terrain)
+17. Example of custom function to create scatter subplots to compare variables to y-variable.
+  Also list comprehension to to exclude y-variable and categorical variables from independent numerical variables
+18. example code to save csv in colab (but have to download to machine anyway)
